@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script crossorigin src="https://unpkg.com/requirejs@2.3.5/require.js"></script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script>
+      // Set up the requirejs modules to point to files on the CDN.
+      requirejs.config({
+        baseUrl: './',
+        paths: {
+          // Require.js appends `.js` extension for you.
+          'react': 'https://unpkg.com/react@16/umd/react.development',
+          'react-dom': 'https://unpkg.com/react-dom@16/umd/react-dom.development',
+          'react-router': 'https://unpkg.com/react-router@4.3.1/umd/react-router',
+          'react-router-dom': 'https://unpkg.com/react-router-dom@4.3.1/umd/react-router-dom'
+        }
+      });
+
+      // Call the entrypoint.
+      require(["src/main"]);
+    </script>
+  </body>
+
+</html>

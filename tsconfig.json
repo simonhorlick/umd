@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
+    "module": "amd",                          /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "jsx": "react",                           /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+    "sourceMap": true,                        /* Generates corresponding '.map' file. */
+    "outDir": "./static",                     /* Redirect output structure to the directory. */
+    "rootDir": "./",                          /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    "strict": true,                           /* Enable all strict type-checking options. */
+    "sourceRoot": "/sources/",                /* Path on the dev webserver to the typescript sources. */
+    "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+    "baseUrl": "./src",                       /* Base directory to resolve non-absolute module names. */
+    "typeRoots": ["./node_modules/@types"],   /* List of folders to include type definitions from. */
+    "esModuleInterop": true,                   /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "preserveWatchOutput": true,
+    "pretty": true
+  }
+}

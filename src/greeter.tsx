@@ -1,0 +1,7 @@
+import * as React from "react";
+
+export class Hello extends React.Component<{}, {}> {
+  render() {
+    return <div>hello, world!</div>;
+  }
+}
