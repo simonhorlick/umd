@@ -18,9 +18,19 @@
           'react': 'https://unpkg.com/react@16/umd/react.development',
           'react-dom': 'https://unpkg.com/react-dom@16/umd/react-dom.development',
           'react-router': 'https://unpkg.com/react-router@4.3.1/umd/react-router',
-          'react-router-dom': 'https://unpkg.com/react-router-dom@4.3.1/umd/react-router-dom'
-        }
+          'react-router-dom': 'https://unpkg.com/react-router-dom@4.3.1/umd/react-router-dom',
+          'rxjs': 'https://unpkg.com/rxjs@6.3.3/bundles/rxjs.umd',
+        },
       });
+
+      // This is a hack because the umd build of rxjs lies about the location
+      // of operators.
+      define("rxjs/operators",
+        ["rxjs"],
+        function (rxjs) {
+          return rxjs.operators;
+        }
+      );
 
       // Call the entrypoint.
       require(["src/main"]);
