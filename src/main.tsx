@@ -1,5 +1,5 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { Counter } from "./greeter";
+import { Counter } from "./counter";
 
 ReactDOM.render(<Counter />, document.getElementById("app"));
